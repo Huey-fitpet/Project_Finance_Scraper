@@ -147,6 +147,7 @@ def main(message):
     ]
 
     # working function 등록
+    # id에 함수명 같은거 넣으면 나중에 어느 함수에서 문제 있었는지 알 수 있을 듯
     for func in func_list:
         scheduler.add_job(register_job_with_mongo, 
                         trigger='interval', 
